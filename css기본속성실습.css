@@ -1,0 +1,20 @@
+h1{
+    font-family: "cookierun";
+}
+ul{
+    border: 2px solid #48751d;
+    width: 200px;
+    height: 100px;
+    background-color:beige;
+}
+li{
+    list-style-type: circle;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    font-style: italic;
+    text-shadow: 1px 1px 3px #ac115e;
+}

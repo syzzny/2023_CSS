@@ -1,0 +1,82 @@
+h1{
+    color: rgba(0,0,0,0.5);
+}
+body{
+    background-image: linear-gradient(rgba(0,0,255,0.5),
+    rgba(225,225,225,0.1)), url(img/cat.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-deco{
+    text-decoration: underline dashed 1px #000;
+}
+a{
+    text-decoration: none;
+    text-decoration-line: overline;
+    text-decoration: violet;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+.text-shadow{
+    text-shadow: 1px 1px 5px red;
+}
+
+.test{
+    color: blue;
+}
+
+.font-mono{
+    font-family: Vivaldi, "CookieRun Black";
+}
+.font-weight{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* link 크래스 안에 있는 a태그에 접근*/
+.link a:link {
+    color:olive;
+}
+.link a:visited{
+    color: cadetblue;
+}
+.link a:hover{
+    color: aquamarine;
+}
+/*클릭했을 경우*/
+.link a:active{
+    color:brown; 
+}
+
+/*클래스 이름 바로뒤에 상태를 붙여서 사용할 수 있다*/
+.p-hover:hover{
+    color:blueviolet;
+}
+.list-mark{
+    list-style-image: url(img/pencil-solid.svg);
+    list-style-position: inside;
+}
+
+.table-col{
+    border: 1px solid #000;
+}
+/*두개 이상의 태그나 클래스에 동일한 css를 넣고싶을때, 를 통해서 함께 넣어줄 수 있다*/
+.table-col,
+.table-col td{
+    border: 1px solid #000;
+}
+.table-col{
+    border-collapse: collapse;
+}
+.table-cell,
+.table-cell td{
+    border: 1px solid blue;
+}
+.table-cell{
+    empty-cells: hide;
+}
