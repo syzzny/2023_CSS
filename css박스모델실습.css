@@ -1,0 +1,86 @@
+.title{
+    background-color: darksalmon;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+.booklist{
+    border: 3px dotted black;
+    border-radius:  20px 20px;
+    width: 495px;
+}
+.booklist p{
+    background-color: aliceblue;
+    width: 460px;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 7px;
+    margin-left: 14px;
+}
+
+
+.tit{
+    background-color: blanchedalmond;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.list{
+    border: black 3px dashed;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.list p{
+    background-color: aliceblue;
+    padding: 5px 10px;
+}
+
+.button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: darkturquoise;
+    border-radius: 20px;
+    padding: 5px 20px;
+    width: 130px;
+    text-align: center;
+}
+.button:hover{
+    background-color: aquamarine;
+}
+.submit{
+    font-size: 20px;
+    border-top: 7px solid rgb(154, 255, 162);
+    width: 170px;
+    text-align: center;
+    padding: 15px 0;
+}
+.submit:hover{
+    font-weight: bold;
+    color: rgb(154, 255, 162);
+    border-top: 3px solid rgb(154, 255, 162);
+    border-bottom: 7px solid rgb(154, 255, 162);
+}
+.link-home{
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+.link-home:hover{
+    background-color: azure;
+}
+.link-blog{
+    text-decoration: none;
+    color: black;
+    padding: 7px 0;
+}
+
+.link-blog:hover{
+    color: green;
+    font-weight: bolder;
+    border-bottom: solid green 3px;
+}

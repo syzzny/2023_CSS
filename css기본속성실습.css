@@ -1,20 +1,27 @@
 h1{
     font-family: "cookierun";
 }
-ul{
-    border: 2px solid #48751d;
-    width: 200px;
-    height: 100px;
-    background-color:beige;
+.list-box{
+    background-color: beige;
+    border: orange solid 2px;
+    width: 300px;
 }
-li{
+.list-deco{
     list-style-type: circle;
 }
-a{
+.list-deco a{
     text-decoration: none;
     color: #000;
+    font-weight: bold;
 }
-a:hover{
+.list-deco a:hover{
     font-style: italic;
     text-shadow: 1px 1px 3px #ac115e;
+}
+.text-strong{
+    font-family: 궁서체;
+    color: aquamarine;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #ac115e;
 }
