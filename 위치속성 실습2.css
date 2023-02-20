@@ -1,0 +1,14 @@
+.list{
+    background-color: azure;
+    list-style-type: none;
+    overflow: auto;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.list li{
+    float: left;
+    padding: 5px 10px;
+    background-color: aqua;
+}

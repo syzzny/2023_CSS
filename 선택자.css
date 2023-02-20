@@ -1,0 +1,79 @@
+.outbox p{
+    background-color: aliceblue;
+}
+.outbox>p{
+    background-color:darkblue;
+}
+.sibling~p{
+    background-color: cadetblue;
+}
+
+/* +를 사용할때는 바로뒤에 있는 태그만 찾을수 있다 */
+.sibling+a{
+    /* 바로뒤에 있지않기에 찾을 수 없음 */
+    background-color: aquamarine;
+}
+.sibling+p{
+    background-color: aquamarine;
+}
+
+.sibling~.test{
+    background-color: burlywood;
+}
+
+.input-focus:focus{
+    background-color: cornsilk;
+    color: blueviolet;
+}
+
+.input-focus:focus+p{
+    color: blue;
+}
+.state>input:checked+span{
+    color: gray;
+}
+.state>input:disabled+span{
+    text-decoration: line-through 1px solid;
+}
+
+.menu-list>li:first-child{
+    background-color: violet;
+}
+.menu-list>li:last-child{
+    background-color: aquamarine;
+}
+.menu-list>li:nth-child(2n){
+    color: blue;
+}
+.table-color{
+    border-collapse: separate;
+}
+/*자손이므로 tbody 무시*/
+.table-color tr:first-child{
+    background-color: azure;
+}
+/*자식이므로 tbody 추가*/
+.table-color>tbody>tr:last-child{
+    background-color:aquamarine;
+}
+
+/*위의 선택자 중 하나를 이용해서 짝수색만 바꾸기*/
+
+.table-color>tbody>tr:nth-child(2n){
+    color:brown;
+}
+.child-tag>p:first-child{
+    color: blue;
+}
+.child-tag>h1{
+    color:brown;
+}
+
+p:first-of-type{
+    color: red;
+}
+/*클래스를 지정하고 자식으로 타입찾기
+first-child와 동일한 역할*/
+.of-type>p:first-of-type{
+    background-color:yellowgreen;
+}
