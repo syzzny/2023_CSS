@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*-----------header-----------*/
+.header{
+    background-color: darkturquoise;
+    padding: 50px;
+    text-align: center;
+}
+
+/*-----------nav-----------*/
+.nav{
+    overflow: auto;
+    background-color: aquamarine;
+    padding-bottom: 15px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    float: left;
+    border-right: 2px solid #333;
+    padding: 0 10px;
+}
+.nav ul li:last-child{
+    border-right: none;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+
+/*-----------main-----------*/
+.main{
+    clear: both;
+    background-color: cadetblue;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 10px;
+    /*최소값을 지정해주면 컨텐츠의 내용이 없을때 크기*/
+    /*height:auto 이기에 컨텐츠의 내용이 많으면 자동으로 늘어난다*/
+    min-height: 500px;
+}
+
+/*-----------footer-----------*/
+.footer{
+    background-color:steelblue;
+    text-align: center;
+    padding: 50px;
+}

@@ -1,16 +1,39 @@
-.color{
-    border: 2px solid saddlebrown;
-    width: 400px;
-}
-.color ul{
+ul{
     list-style: none;
-    position: relative;
 }
-.tag span{
-    border: 1px solid cornflowerblue;
-    border-radius:40px;
-    padding: 5px 10px;
+.dict{
+    border: 3px solid saddlebrown;
+    width: 400px;
+    position: relative;
+
+}
+.dict li a{
+    text-decoration: none;
+    color: #000;
+}
+.tag ul{
+    width: 370px;
+}
+/*li 태그가 block 속성일 때 float 속성으로 정렬*/
+.tag ul li{
+    float: right;
     background-color: cornflowerblue;
     color: #eee;
-    
+    margin: 10px 5px;
+    padding: 5px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius:40px;
+    text-align: center;
+}
+.tag-inline{
+    clear: both;
+    position: relative;
+    left: 15%;
+}
+.tag-inline span{
+    background-color: cornflowerblue;
+    color: #eee;
+    padding: 5px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius:40px;
 }

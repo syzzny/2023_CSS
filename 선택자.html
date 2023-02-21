@@ -108,5 +108,70 @@
             <p>최초의 요소</p>
         </div>
     </div>
+    <h2>html 요소 특정부분에 추가하는 선택자</h2>
+    <p class="first-letter">
+        텍스트의 첫글자를 디자인합니다
+    </p>
+    <p class="first-line">
+        첫번째 줄을 디자인합니다 <br>
+        줄이 바뀐곳은 바뀌지않습니다
+    </p>
+    <h2>html 요소 앞과 뒤에 새로운 요소 추가하는 선택자</h2>
+    <p class="before">
+        p 태그앞에 내용이 들어갑니다
+    </p>
+    <p class="before-image">
+        p태그앞에 이미지가 들어갑니다 <br>
+        svg 이미지: 벡터 이미지(크기제한 x) <br>
+        png/jpg/gif: 픽셀이미지(크기제한0)
+    </p>
+    <p class="before-color">
+        p태그 앞에 색상을 넣을때
+    </p>
+    <p class="after">
+        p태그 뒤에 작성
+    </p>
+    <p class="after-color">
+        p태그에 색상
+    </p>
+
+    <h2>속성 선택자</h2>
+    <div class="attr">
+        <input type="checkbox" name="group"> <span>선택</span>
+        <input type="radio" name="group"> <span>네</span>
+        <input type="radio" name="group"> <span>아니오</span>
+
+        <input type="button" value="제출">
+    </div>
+
+    <hr>
+    <h1>선택자를 이용한 태그 작성</h1>
+    <p>
+        html에서 태그 이름을 적으면 관련 태그가 자동완성 되는것을 emmet 이라고 한다 <br>
+        emmet 으로 작성하는 태그는 선택자 형식으로 작성하면 자동완성이 된다
+    </p>
+    <p class="class-name">
+        p.class-name 이라고 작성하면 클래스가 추가됨
+    </p>
+    <div>
+        <p>div>p를 작성하면 div안에 p를 자식으로 생성</p>
+    </div>
+    <div class="list">
+        <ul>
+            <li>내용작성</li>
+            <li>내용작성</li>
+            <li>내용작성</li>
+        </ul>
+    </div>
+    <div>
+        <p></p>
+        <p></p>
+        <h3>div>p*2+h3</h3>
+    </div>
+    <div>
+        <p></p>
+        <p></p>
+        <h1>div>p*2+h3</h1>
+    </div>
 </body>
 </html>

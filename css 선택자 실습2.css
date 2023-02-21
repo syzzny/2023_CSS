@@ -1,0 +1,10 @@
+.nonf::after{
+    content: "N";
+    color: #fff;
+    display: inline-block;
+    background-color: gold;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
