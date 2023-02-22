@@ -100,3 +100,11 @@ body{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.border-image{
+    width: 100px;
+    height: 100px;
+    border: 36px solid orange;
+    /* border-image: url(./img/border.png) 27 space; */
+    border-image: url(img/border.png) 28 / 35px round;
+    display: inline-block;
+}

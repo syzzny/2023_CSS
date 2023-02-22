@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="변형.css">
+</head>
+<body>
+    <h1>2d Transform</h1>
+    <p>
+        요소들을 이동하거나 회전할 수 있다
+        (position과 별개)
+    </p>
+    <div class="my-box">
+        아무것도 적용되지않은 박스
+    </div>
+    <div class="my-box trans">
+        x,y 축으로 이동합니다
+    </div>
+    <div class="my-box rotate">
+        회전합니다
+    </div>
+    <div class="my-box transform">
+        여러 변형을 함께 사용합니다
+    </div>
+    <div class="my-box transform-3d">
+        3차원으로 이동 및 회전합니다
+    </div>
+    <h1>transition - 전환효과</h1>
+    <div class="my-box transition"></div>
+    <p>
+        전환을 사용할 때는 전환이 되기 전 디자인과 전환이 된 후의 디자인 두개가 필요하다 <br>
+        전환이 되기 위한 조건(hover, check 등)이 맞으면 전환되는 모습을 보여준다. <br>
+        차후에는 js를 이용해서도 줄 수 있다.
+    </p>
+    <div class="my-box transform-transition">
+
+    </div>
+    <p>
+        전환을 할때, 여러 속성 이름으로 전환을 할 수 있다 <br>
+        전환을 추가할때 , 를 통해 속성이름과 시간 추가 <br>
+        수정한 모든 값을 전환으로 쓸때는 all 을 사용하면 된다
+    </p>
+    <div class="my-box linear-transition"></div>
+
+    <h1>전환효과 연습</h1>
+    <p>아래 태그들에게 전환효과를 넣으세요</p>
+    <div class="after-checkbox">
+        <input type="checkbox">
+        <span>체크가 되면 글자색이 파랗게 전환</span>
+    </div>
+    <div class="after-transition">
+        <p>
+            after를 이용해서 마우스를 올리면 배경색이 검정으로 바뀌고 다른 글자가 나오게 전환
+        </p>
+    </div>
+    <p>
+        전환효과를 주기전에, 해당 태그에 전환했을때 디자인이 들어가 있는지를 확인한 후, 전환효과를 주면 <br>
+        빠지는 내용없이 확인하기 쉽다 <br>
+        선택자 after의 경우 새로운 내용을 추가하는 선택자 after의 값과 :hover::after의 값을 주어야 전환가능 <br>
+    </p>
+
+    <h2>이미지에 마우스를 올렸을때 이미지 확대</h2>
+    <div class="content-container">
+        <div class="img"></div>
+    </div>
+    <h2>마우스를 올렸을때 확대되는 이미지 만들기</h2>
+    <p>두개의 div가 같은 라인에서 나오도록</p>
+    <div class="content-img">
+        <div class="img"></div>
+    </div>
+    <div class="content-img">
+        <div class="img2"></div>
+    </div>
+
+    <div class="content-container">
+        <div class="black">새이미지 입니다</div>
+        <div class="img2"></div>
+    </div>
+    
+    <h1>애니메이션</h1>
+    <div class="wrap">
+        <p class="animation">애니메이션이 적용된 p태그 입니다</p>
+    </div>
+
+    <h2>div의 모양이 바뀌는 애니메이션</h2>
+    <div class="text">
+        <p>내용확인</p>
+    </div>
+    <div class="my-box animation-box">
+    </div>
+    <p>
+        애니메이션을 사용해서 태그를 반복해서 움직일수 있다 <br>
+        그 태그위에 다른 내용이나 글자를 적고싶을때 태그안에 적게되면 함께 움직이기 때문에, 태그 바깥에 <br>
+        position을 절대값으로 해서 사용하면 된다.
+    </p>
+
+    <h2>이미지 필터효과</h2>
+    <img class="filter" src="img/cat.jpg" alt="">
+
+    <h2>배경 이미지에 필터효과</h2>
+    <div class="image-list">
+        <div class="content-image"></div>
+        <div class="content-image"></div>
+        <div class="content-image"></div>
+    </div>
+    <a href="https://developer.mozilla.org/ko/docs/web">
+        필터관련 설명
+    </a>
+    <h2>애니메이션 실습</h2>
+    <div class="pencil"></div>
+    <p>pencil 클래스에 이미지를 넣고, 1초에 한번 흔들리고 멈추는 애니메이션 (무한반복)</p>
+    
+    <h2>태그의 혼합모드 - mix blend-mode</h2>
+    <div class="mix-blend">
+        블렌드 모드중 difference 입니다
+    </div>
+    <p>
+        태그끼리 겹쳤을때 표현하는 색방식을 설정할 수 있다. <br>
+        difference의 경우 태그의 색이 흰색일때 아래 색상에 따라 반전되어서 화면에 출력된다<br>
+        단 아래 태그에 색상이 없을 경우는 반전되지 않음 그 외 태그들은 아래 mdn 주소에서 확인할 수 있다.
+    </p>
+    <a href="https://developer.mozilla.org/ko/docs/web/css">
+        여러가지 mix-blend-mod의 종류 mdn에서 확인
+    </a>
+</body>
+</html>
