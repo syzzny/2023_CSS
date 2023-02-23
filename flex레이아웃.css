@@ -27,3 +27,35 @@
     justify-content: space-around;
     align-content: space-around;
 }
+.flex-box-item{
+    display: flex;
+    height: 150px;
+    background-color: burlywood;
+}
+.flex-box-item p:nth-child(2){
+    align-self: flex-end;
+}
+/* 실습코드 */
+.flex-box-bar{
+    display: flex;
+    justify-content: space-between;
+    /* 각각의 요소들의 크기가 다르므로 움직일수 있는 높이있음 */
+    align-items: center;
+}
+.flex-box-bar .logo{
+    background-image: url(img/pencil-solid.svg);
+    /* 이미지 최소 크기 고정 */
+    min-width: 30px;
+    height: 30px;
+}
+.flex-box-bar .flex-box-menu{
+    /* 플렉스 컨테이너에서 아이템은 content 크기만 갖기에 너비 지정 */
+    width: 80%;
+}
+.flex-box-bar .flex-box-menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+

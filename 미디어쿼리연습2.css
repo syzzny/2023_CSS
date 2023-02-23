@@ -1,0 +1,32 @@
+.contain{
+    /*최소 높이값을 지정해서 화면에 내용 출력*/
+    min-height: 300px;
+    /*최대 넓이 값을 지정해서 1000px 이상 커지면 안커지게*/
+    max-width: 1000px;
+    background-color: skyblue;
+    /*공간이 남을 경우 중앙정렬*/
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contain .main{
+    grid-column: 1/3;
+    background-color: lightsteelblue;
+    padding: 10px;
+}
+.contain .section:last-child{
+    background-color: gainsboro;
+}
+.contain .section{
+    background-color: azure;
+}
+
+
+@media screen and (max-width:767px) {
+    .contain{
+        grid-template-columns: 1fr;
+    }
+    .contain .main{
+        grid-column: 1/2;
+    }
+}
